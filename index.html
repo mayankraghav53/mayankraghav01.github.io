@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- 
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="android-chrome-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="favicon.ico" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body onload="timer()">
+    <header>
+      <nav>
+        <div id="proto">
+          <h1>My Portfolio</h1>
+          <div id="parent">
+            <div id="btn" onclick="changecolor('#000000')"></div>
+            <div id="btn2" onclick="changecolor2('#f9f9f9')"></div>
+          </div>
+        </div>
+        <h2 id="clock" style="color: white"></h2>
+        <ul id="nav-links">
+          <li><i class="fa-solid fa-bars"></i></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="toggle-menu">☰</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="my photo.jpg" alt="My Photo" class="profile-pic" />
+      <h2>Hello, I'm <span>Mayank</span> <span>Raghav</span></h2>
+      <p>
+        A Frontend focused Web Developer building the Frontend of Websites and
+        Web Applications that
+      </p>
+      <p>leads to the success of the overall product</p>
+      <a href="Sudhir Raghav Resume.docx" download class="btn"
+        >Download Resume</a
+      >
+    </section>
+
+    <section id="about">
+      <h2 class="color-switch">About Me</h2>
+      <p class="color-switch" id="about-text">
+        As a Junior Frontend developer, I excel in designing and maintaining the
+        responsive websites that offer a smooth user experience. I am also a
+        team player who thrives in collaborating with cross-functional teams to
+        produce outstanding web applications..
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2 class="color-switch">My Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>My personal portfolio website built with HTML, CSS, JavaScript.</p>
+        </div>
+        <div class="project-card">
+          <h3>Todo App</h3>
+          <p>Simple Todo App to manage daily tasks.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="color-switch">Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" id="name" />
+        <input type="email" placeholder="Your Email" id="email" />
+        <input type="text" placeholder="Your Number" id="number" />
+        <p id="error" style="color: red"></p>
+        <textarea placeholder="Your Message" id="message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="responseMessage"></p>
+      </form>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column footer-left">
+            <h3>My Portfolio</h3>
+            <p><i class="fa-regular fa-copyright"></i> Portfolio Pvt. Ltd.</p>
+          </div>
+          <div class="column footer-center">
+            <h3>Contact Us</h3>
+            <div class="content-div">
+              <i class="fa fa-location-dot"></i>
+              <p>Gurugram Sector-102</p>
+            </div>
+            <div class="content-div">
+              <i class="fa fa-phone"></i>
+              <p>
+                <a href="tel:+918076350367">+91 8950801906</a>
+              </p>
+            </div>
+            <div class="content-div">
+              <i class="fa fa-envelope"></i>
+              <p>
+                <a href="mailto:raghavmayank314@gmail.com"
+                  >raghavmayank314@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="column footer-right">
+            <h3>Follow Us</h3>
+            <div class="icons">
+              <i class="fa-brands fa-telegram"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
